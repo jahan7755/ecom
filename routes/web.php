@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\frontend\AdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontend\AboutController;
 use App\Http\Controllers\Frontend\HomeController;
@@ -31,5 +32,7 @@ Route::get("/account-password-recovery", [AcPassReController::class,"index"]);
 
 Route::get("/login", [LoginController::class,"index"]);
 Route::post("/login", [AccSigninController::class,"verify"]);
+
+Route::get("/admin",[AdminController::class,"index"]);
 
 
