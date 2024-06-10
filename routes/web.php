@@ -9,6 +9,7 @@ use App\Http\Controllers\Frontend\ShopCartController;
 use App\Http\Controllers\Frontend\AccProfileController;
 use App\Http\Controllers\Frontend\AccSigninController;
 use App\Http\Controllers\Frontend\AcPassReController;
+use App\Http\Controllers\frontend\BrandController;
 use App\Http\Controllers\Frontend\ContactsController;
 use App\Http\Controllers\Frontend\LoginController;
 
@@ -35,4 +36,11 @@ Route::post("/login", [AccSigninController::class,"verify"]);
 
 Route::get("/admin",[AdminController::class,"index"]);
 
+Route::get('/admin/brands',[BrandController::class,"Index"]);
+Route::get('/admin/brands/create',[BrandController::class,"CreateForm"]);
+Route::post('/admin/brands/create',[BrandController::class,"Save"]);
+
+Route::get("/admin/brands/update/{id}",[BrandController::class,'UpdateForm']);
+Route::post("/admin/brands/update/{id}",[BrandController::class,'UpdateData']);
+Route::get("/admin/brands/{id}/delete",[BrandController::class,'DeleteBrand']);
 
