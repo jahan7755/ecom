@@ -40,7 +40,7 @@ Route::get('/admin/brands',[BrandController::class,"Index"]);
 Route::get('/admin/brands/create',[BrandController::class,"CreateForm"]);
 Route::post('/admin/brands/create',[BrandController::class,"Save"]);
 
-Route::get("/admin/brands/update/{id}",[BrandController::class,'UpdateForm']);
-Route::post("/admin/brands/update/{id}",[BrandController::class,'UpdateData']);
-Route::get("/admin/brands/{id}/delete",[BrandController::class,'DeleteBrand']);
+Route::post("/admin/brands/update/{id}",[BrandController::class,"UpdateData"]);
+Route::get("/admin/brands/update/{id}",[BrandController::class,"UpdateForm"]);
+Route::get("/admin/brands/{id}/delete",[BrandController::class,"DeleteBrand"]);
 
