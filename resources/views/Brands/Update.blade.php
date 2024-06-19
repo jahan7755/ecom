@@ -37,7 +37,7 @@
           <div class="row mb-3">
             <label class="col-sm-2 col-form-label" for="location">Location</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="location" name="location" value="{{$brand->Location}}" placeholder="Not Available" />
+              <input type="text" class="form-control" id="location" name="location" value="{{$brand->location}}" placeholder="Not Available" />
             </div>
           </div>
 
@@ -47,6 +47,13 @@
               <input type="text" class="form-control" id="rating" name="rating" value="{{$brand->rating}}" placeholder="Not Available" />
             </div>
           </div>
+
+          <div class="row mb-3">
+            <label class="col-sm-2 col-form-label" for="logo">Logo</label>
+            <div class="col-sm-10">
+                <input type="file" class="form-control-file" id="logo" name="logo" value="{{$brand->logo}}" accept="image/*" placeholder="Not Available">
+            </div>
+        </div>
           
          
           <div class="row justify-content-end">
