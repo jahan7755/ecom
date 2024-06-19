@@ -5,6 +5,7 @@ namespace App\Http\Controllers\frontend;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Brand;
+// use illuminate\Support\Facades\DB;
 class BrandController extends Controller
 {
     public function Index(){
@@ -29,16 +30,17 @@ class BrandController extends Controller
             'origin'=>$request->origin,
             'location'=>$request->location,
             'rating'=>$request->rating,
+            'logo'=>$request->logo,
         ]);
 
-        return redirect('/admin/brands');
+        return redirect('/admin/brands')->with('primary','Brand Added Successfully');
     }
 
-    public function UpdateForm(Request $request,$id){
+    public function UpdateForm($id){
 
         $brand = Brand::findOrFail($id);
         
-        return redirect("/admin/brands")->with('succes','Brand Updated Successfully');
+        return view('Brands.Update',compact('brand'));
 
     }
 
@@ -46,15 +48,17 @@ class BrandController extends Controller
 
         $brand = Brand::findOrFail($id);
         
+        
         $brand->update([
             'name'=>$request->name,
             'seller'=>$request->seller,
             'origin'=>$request->origin,
             'location'=>$request->location,
             'rating'=>$request->rating,
+            'logo'=>$request->logo,
         ]);
 
-        return redirect("/admin/brands")->with('succes','Brand Updated Successfully');
+        return redirect("/admin/brands")->with('success','Brand Updated Successfully');
 
     }
 
@@ -65,3 +69,5 @@ class BrandController extends Controller
         return redirect("/admin/brands")->with('danger','Brand deleted Successfully');
     }
 }
+
+
