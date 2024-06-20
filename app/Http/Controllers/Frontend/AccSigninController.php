@@ -50,12 +50,9 @@ class AccSigninController extends Controller
        
         if(Auth::attempt($data))
         {
-            dd("Your Password is correct");
+            return redirect('/home');
         }
-        else
-        {
-            dd("Your Password is incorrect");
-        }
+        
 
         // dd($data);
     }
