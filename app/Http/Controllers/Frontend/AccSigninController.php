@@ -34,28 +34,31 @@ class AccSigninController extends Controller
     }
 
 
-    public function login()
-    {
+    // public function login()
+    // {
 
-        return view('Auth.Login');
+    //     return view('Auth.Login');
 
-    }
+    // }
 
-    public function verify(Request $request)
-    {
+    // public function verify(Request $request)
+    // {
        
-        $data = $request->only('email','password');
+    //     $data = $request->only('email','password');
         
-        // dd($data);
+    //     // dd($data);
        
-        if(Auth::attempt($data))
-        {
-            return redirect('/home');
-        }
-        
+    //     if(Auth::attempt($data))
+    //     {
+    //         return redirect('/home');
+    //     }
+    //     else
+    //     {
+    //         return redirect('/login');
+    //     }
 
-        // dd($data);
-    }
+    //     // dd($data);
+    // }
 
 
     
