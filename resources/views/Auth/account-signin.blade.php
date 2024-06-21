@@ -8,7 +8,7 @@
       <div class="card border-0 shadow form-card">
         <div class="card-body">
           <h2 class="h4 mb-3">Sign Up</h2>
-          <p class="fs-sm text-muted mb-4">Registration takes less than a minute but gives you full control over your orders.</p>
+          <p class="fs-sm text-muted mb-4">Already a cutomer?...<a href="login">Login here</a></p>
           <form class="needs-validation" novalidate method="POST">
             <div class="row gx-4 gy-3">
               <div class="col-sm-6">
