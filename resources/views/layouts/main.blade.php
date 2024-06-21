@@ -710,8 +710,8 @@
                 </ul>
                 <!-- Primary menu-->
                 <ul class="navbar-nav">
-                  <li class="nav-item dropdown active"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
-                    <ul class="dropdown-menu">
+                  <li class="nav-item dropdown active"><a class="nav-link dropdown-toggle" href="home" >Home</a>
+                    {{-- <ul class="dropdown-menu">
                       <li class="dropdown position-static mb-0"><a class="dropdown-item border-bottom py-2" href="home-nft.html"><span class="d-block text-heading">NFT Marketplace<span class="badge bg-danger ms-1">NEW</span></span><small class="d-block text-muted">NFTs, Multi-vendor, Auctions</small></a>
                         <div class="dropdown-menu h-100 animation-none mt-0 p-3"><a class="d-block" href="home-nft.html" style="width: 250px;"><img src="img/home/preview/th08.jpg" alt="NFT Marketplace"></a></div>
                       </li>
@@ -736,10 +736,10 @@
                       <li class="dropdown position-static mb-0"><a class="dropdown-item py-2" href="home-single-store.html"><span class="d-block text-heading">Single Product Store</span><small class="d-block text-muted">Single product / mono brand</small></a>
                         <div class="dropdown-menu h-100 animation-none mt-0 p-3"><a class="d-block" href="home-single-store.html" style="width: 250px;"><img src="img/home/preview/th05.jpg" alt="Single Product / Brand Store"></a></div>
                       </li>
-                    </ul>
+                    </ul> --}}
                   </li>
-                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Shop</a>
-                    <div class="dropdown-menu p-0">
+                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="about">About us</a>
+                    {{-- <div class="dropdown-menu p-0">
                       <div class="d-flex flex-wrap flex-sm-nowrap px-2">
                         <div class="mega-dropdown-column pt-1 pt-lg-4 pb-4 px-2 px-lg-3">
                           <div class="widget widget-links mb-4">
@@ -815,7 +815,10 @@
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </div> --}}
+                  </li>
+                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="contacts">Contact us</a>
+                    
                   </li>
                   <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Account</a>
                     <ul class="dropdown-menu">
