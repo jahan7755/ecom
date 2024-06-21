@@ -32,7 +32,7 @@ Route::get("/contacts", [ContactsController::class,"index"]);
 Route::get("/account-password-recovery", [AcPassReController::class,"index"]);
 
 Route::get("/login", [LoginController::class,"index"]);
-Route::post("/login", [AccSigninController::class,"verify"]);
+Route::post("/login", [LoginController::class,"verify"]);
 
 Route::get("/admin",[AdminController::class,"index"]);
 
