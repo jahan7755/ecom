@@ -50,7 +50,8 @@
             <td>{{$brand->location}}</td>
             <td>{{$brand->origin}}</td>
             <td>{{$brand->rating}}</td>
-            <td>{{$brand->logo}}</td>
+            <td><img src="{{asset('/brands/logo/'.$brand->logo)}}" width="50px" height="50px"></img></td>
+
             <td>
                 <a href="{{url('/admin/brands/update',['id'=>$brand->id])}}" class="btn btn-sm btn-primary text-white">Update</a>
                 <a href="/admin/brands/{{$brand->id}}/delete/" class="btn btn-sm btn-danger text-white">Delete</a>
