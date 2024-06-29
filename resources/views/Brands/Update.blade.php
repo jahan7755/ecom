@@ -51,7 +51,7 @@
           <div class="row mb-3">
             <label class="col-sm-2 col-form-label" for="logo">Logo</label>
             <div class="col-sm-10">
-                <input type="file" class="form-control-file" id="logo" name="logo"  accept="image/*" placeholder="Not Available">
+                <input type="file" class="form-control-file" id="logo" name="logo" value="{{$brand->logo}}"  accept="image/*" placeholder="Not Available">
 
                 <img src="{{asset('/brands/logo/'.$brand->logo)}}" alt="Logo Image" height="50px" width="50px">
             
