@@ -32,10 +32,10 @@ class BrandResource extends Resource
                 TextInput::make('origin'),
                 TextInput::make('seller'),
                 TextInput::make('rating'),
-                FileUpload::make('logo')
-                    ->disk('public')
-                    ->directory('public/brands/logo/')
-                    ->image()
+                FileUpload::make('logo'),
+                    // ->disk('public')
+                    // ->directory('public/brands/logo/')
+                    // ->image()
 
             ]);
     }
@@ -51,11 +51,11 @@ class BrandResource extends Resource
                 TextColumn::make('origin'),
                 TextColumn::make('rating'),
                 ImageColumn::make('logo')
-                    ->disk('public') // Ensure this matches your storage disk configuration
-                    ->directory('public/brands/logo/') // Ensure it points to the correct directory
-                    ->width(50) // Adjust width if needed
-                    ->height(50),
-                //
+                //     ->disk('public') // Ensure this matches your storage disk configuration
+                //     ->directory('public/brands/logo/') // Ensure it points to the correct directory
+                //     ->width(50) // Adjust width if needed
+                //     ->height(50),
+                // //
             ])
             ->filters([
                 //
