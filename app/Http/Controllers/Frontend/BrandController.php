@@ -79,11 +79,6 @@ class BrandController extends Controller
                 
             ]);
             
-        
-
-        
-        
-
         return redirect("/admin/brands")->with('success','Brand Updated Successfully');
 
     }
