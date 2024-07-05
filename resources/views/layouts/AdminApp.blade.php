@@ -117,7 +117,7 @@
 </svg>
 
 </span>
-      <span class="app-brand-text demo menu-text fw-bold ms-2">Sneat</span>
+      <span class="app-brand-text demo menu-text fw-bold ms-2">Admin</span>
     </a>
 
     <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -142,7 +142,7 @@
 
 
     <li class="menu-header small text-uppercase">
-      <span class="menu-header-text">Brands</span>
+      <span class="menu-header-text">Components</span>
     </li>
    
     <!-- Pages -->
@@ -150,26 +150,14 @@
       <a href="/admin/brands" class="menu-link">
         <i class="menu-icon tf-icons bx bxs-category-alt"></i>
         <div data-i18n="Account settings">Brands</div>
-      </a>
-
-      {{-- <ul class="menu-sub">
-        <li class="menu-item">
-          <a href="pages-account-settings-account.html" class="menu-link">
-            <div data-i18n="Account">Account</div>
-          </a>
-        </li>
-        <li class="menu-item">
-          <a href="pages-account-settings-notifications.html" class="menu-link">
-            <div data-i18n="Notifications">Notifications</div>
-          </a>
-        </li>
-        <li class="menu-item">
-          <a href="pages-account-settings-connections.html" class="menu-link">
-            <div data-i18n="Connections">Connections</div>
-          </a>
-        </li>
-      </ul>
-    </li> --}}
+      </a>    
+    </li> 
+    <li class="menu-item">
+      <a href="/admin/navbar" class="menu-link">
+        <i class="menu-icon tf-icons bx bxs-category-alt"></i>
+        <div data-i18n="Account settings">Nav-Menus</div>
+      </a>    
+    </li> 
 
 </aside>
 <!-- / Menu -->
