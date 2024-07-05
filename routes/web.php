@@ -13,7 +13,6 @@ use App\Http\Controllers\frontend\BrandController;
 use App\Http\Controllers\Frontend\ContactsController;
 use App\Http\Controllers\Frontend\LoginController;
 
-
 // Route::get('/', function () {
 //     return view('welcome');
 // });
@@ -43,4 +42,10 @@ Route::post('/admin/brands/create',[BrandController::class,"Save"]);
 Route::post("/admin/brands/update/{id}",[BrandController::class,"UpdateData"]);
 Route::get("/admin/brands/update/{id}",[BrandController::class,"UpdateForm"]);
 Route::get("/admin/brands/{id}/delete",[BrandController::class,"DeleteBrand"]);
+
+
+
+
+
+
 
